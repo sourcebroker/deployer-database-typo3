@@ -58,10 +58,10 @@ set('db_databases',
             get('db_default'),
             function () {
                 if (get('driver_typo3cms', false)) {
-                    return (new \SourceBroker\DeployerDatabaseTypo3\Drivers\Typo3CmsDriver)->getDatabaseConfig();
+                    return (new \SourceBroker\DeployerTypo3Database\Drivers\Typo3CmsDriver)->getDatabaseConfig();
                 }
                 return !empty($_ENV['IS_DDEV_PROJECT']) ? get('db_ddev_database_config') :
-                    (new \SourceBroker\DeployerDatabaseTypo3\Drivers\Typo3EnvDriver)->getDatabaseConfig(
+                    (new \SourceBroker\DeployerTypo3Database\Drivers\Typo3EnvDriver)->getDatabaseConfig(
                         [
                             'host' => 'TYPO3__DB__Connections__Default__host',
                             'port' => 'TYPO3__DB__Connections__Default__port',

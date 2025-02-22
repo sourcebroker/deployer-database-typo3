@@ -1,6 +1,6 @@
 <?php
 
-namespace SourceBroker\DeployerDatabaseTypo3\Drivers;
+namespace SourceBroker\DeployerTypo3Database\Drivers;
 
 use Deployer\Exception\ConfigurationException;
 use SourceBroker\DeployerInstance\Configuration;

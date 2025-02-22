@@ -1,6 +1,6 @@
 <?php
 
-namespace SourceBroker\DeployerDatabaseTypo3;
+namespace SourceBroker\DeployerTypo3Database;
 
 use SourceBroker\DeployerLoader\Load;
 
@@ -12,7 +12,7 @@ class Loader
         new Load([
                 ['path' => 'vendor/sourcebroker/deployer-instance/deployer'],
                 ['path' => 'vendor/sourcebroker/deployer-extended-database/deployer'],
-                ['path' => 'vendor/sourcebroker/deployer-database-typo3/deployer'],
+                ['path' => 'vendor/sourcebroker/deployer-typo3-database/deployer'],
             ]
         );
     }

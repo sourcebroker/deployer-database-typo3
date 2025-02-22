@@ -1,5 +1,5 @@
 {
-  "name": "sourcebroker/deployer-database-typo3",
+  "name": "sourcebroker/deployer-typo3-database",
   "description": "Database sync for TYPO3 with deployer-extended-database.",
   "license": "MIT",
   "keywords": [
@@ -21,7 +21,7 @@
   },
   "autoload": {
     "psr-4": {
-      "SourceBroker\\DeployerDatabaseTypo3\\": "src/"
+      "SourceBroker\\DeployerTypo3Database\\": "src/"
     }
   },
   "extra": {

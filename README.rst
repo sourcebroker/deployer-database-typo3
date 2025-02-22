@@ -1,11 +1,11 @@
-deployer-database-typo3
+deployer-typo3-database
 =======================
 
-      .. image:: http://img.shields.io/packagist/v/sourcebroker/deployer-database-typo3.svg?style=flat
+      .. image:: http://img.shields.io/packagist/v/sourcebroker/deployer-typo3-database.svg?style=flat
          :target: https://packagist.org/packages/sourcebroker/deployer-extended-typo3
 
       .. image:: https://img.shields.io/badge/license-MIT-blue.svg?style=flat
-         :target: https://packagist.org/packages/sourcebroker/deployer-database-typo3
+         :target: https://packagist.org/packages/sourcebroker/deployer-typo3-database
 
 .. contents:: :local:
 
@@ -21,14 +21,14 @@ Installation
 1) Install package with composer:
    ::
 
-      composer require sourcebroker/deployer-database-typo3
+      composer require sourcebroker/deployer-typo3-database
 
 
 2) Put following lines on the beginning of your deploy.php:
    ::
 
       require_once(__DIR__ . '/vendor/sourcebroker/deployer-loader/autoload.php');
-      new \SourceBroker\DeployerDatabaseTypo3\Loader();
+      new \SourceBroker\DeployerTypo3Database\Loader();
 
 3) On each instance create ``.env`` file which should be out of git and have at least ``INSTANCE`` with the same name as
    defined for ``host()`` in ``deploy.php`` file. You can use this file also to store database credentials and all other
@@ -78,7 +78,7 @@ This is example of working configuration for TYPO3 13.
 
   require_once(__DIR__ . '/vendor/sourcebroker/deployer-loader/autoload.php');
 
-  new \SourceBroker\DeployerDatabaseTypo3\Loader();
+  new \SourceBroker\DeployerTypo3Database\Loader();
 
   host('live')
       ->setHostname('vm-dev.example.com')
@@ -102,7 +102,7 @@ This is example of working configuration for TYPO3 13.
 Changelog
 ---------
 
-See https://github.com/sourcebroker/deployer-database-typo3/blob/master/CHANGELOG.rst
+See https://github.com/sourcebroker/deployer-typo3-database/blob/master/CHANGELOG.rst
 
 
-.. _sourcebroker/deployer-extended-database: https://github.com/sourcebroker/deployer-database-typo3
+.. _sourcebroker/deployer-extended-database: https://github.com/sourcebroker/deployer-typo3-database
