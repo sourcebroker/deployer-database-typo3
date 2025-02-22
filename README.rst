@@ -9,6 +9,12 @@ deployer-typo3-database
 
 .. contents:: :local:
 
+
+Notice (!!!)
+------------
+This is experimental package for now. Do not use it yet.
+
+
 What does it do?
 ----------------
 
